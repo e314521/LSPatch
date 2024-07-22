@@ -80,6 +80,7 @@ jobs:
         cd service
         echo 'org.gradle.jvmargs=-Xmx2048m' >> gradle.properties
         ./gradlew :interface:publishInterfacePublicationToMavenLocal
+
     - name: Build with Gradle
       run: |
         echo 'org.gradle.parallel=true' >> gradle.properties
