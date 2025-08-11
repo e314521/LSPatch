@@ -87,6 +87,7 @@ jobs:
         echo 'org.gradle.parallel=true' >> gradle.properties
         echo 'org.gradle.jvmargs=-Xmx2048m' >> gradle.properties
         echo 'android.native.buildOutput=verbose' >> gradle.properties
+        chmod +x ./gradlew
         ./gradlew buildAll
 
     - name: Upload Debug artifact
